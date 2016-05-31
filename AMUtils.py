@@ -3,7 +3,7 @@ import re
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
 stop = stopwords.words('english')
-colnames = ['label', 'id', 'date', 'user', 'tweet']
+colnames = ['label', 'id', 'date','query', 'user', 'tweet']
 data = pandas.read_csv('testdata.csv', names=colnames)
 tweets = data.tweet.tolist()
 refined  = []
